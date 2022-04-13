@@ -1,0 +1,105 @@
+:root{
+    --main-color: #d77b5d;
+    --main-font: 'Playfair Display', serif;
+    --calendar-bg-color: #262829;
+    --calendar-font-color: #fff;
+    --weekdays-border-bottom-color: #404040;
+    --calendar-date-hover-color: #505050;
+    --calendar-current-date-color: #1b1f21;
+    --calendar-today-color: linear-gradient(to bottom, #03a9f4, #2196f3);
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color : #FFF;
+    --calendar-border-radius: 16px;
+    --calendar-prevnext-date-color: #484848
+}
+
+.active-nav:hover{
+    background-color: #1a2436;
+    border-top: 1px solid var(--main-color);
+}
+
+.active-main-color{
+    color: var(--main-color) !important;
+}
+
+.active-btn-color{
+    color: #869791 !important;
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .m-flex-cl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .m-flex-cl{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 100%;
+    }
+    .grid.wide.margin-left{
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .padding-40{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .padding-20{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+
+.l-border-bt{
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+}
+
+@media only screen and (max-width: 46.1875em){
+    .c-flex-cl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .padding-40{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .border-left-right{
+        border-left: none;
+        border-right: none;
+    }
+
+    .c-border{
+        border-bottom: 1px solid #e1e1e1;
+    }
+}

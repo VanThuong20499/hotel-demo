@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./assets/slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header" class="header">
+            <img src="./assets/img/photo-services-1-2.jpg" alt="" class="header__img">
+            <div class="header__heading c-0">
+                <div class="header__heading-items">
+                    <span class="header__heading-item-phone">+1-800-123-45-67</span>
+                    <div class="header__heading-item-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="header__heading-items">
+                    <span class="header__heading-item-language color-white">EN</span>
+                    <span class="header__heading-item-language">FR</span>
+                    <span class="header__heading-item-language">DE</span>
+                </div>
+            </div>
+            <div class="header__nav">
+                <div class="header__nav-items">
+                    <div class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">HOME</a>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="./assets/detail_page/about.html" class="header__nav-item-link">About us</a>
+                    </div>
+                    <div class="header__nav-item active-nav">
+                        <a href="./assets/detail_room/room.html" class="header__nav-item-link">Rooms</a>
+                        <div class="header__nav-item-link-items">
+                            <a href="./assets/detail_room/room.html" class="header__nav-item-link-item">room listing</a>
+                            <a href="./assets/detail_room/room_detail.html" class="header__nav-item-link-item">room detail</a>
+                        </div>
+                    </div>
+                    <a href="./assets/services/services_detail.html" class="header__nav-item-link">services</a>
+                </div>
+                <a href="#" class="header__nav-item-logo-link">
+                    <img src="./assets/img/logo.png" alt="" class="header__nav-item-logo">
+                </a>
+                <div class="header__nav-items">
+                    <div class="header__nav-item">
+                        <a href="./assets/gallery/gallery.html" class="header__nav-item-link">gallery</a>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="./assets/booking/booking.html" class="header__nav-item-link">booking</a>
+                    </div>
+                    <div class="header__nav-item active-nav">
+                        <a href="./assets/blog/blog_listing.html" class="header__nav-item-link">blog</a>
+                        <div class="header__nav-item-link-items min-width-200">
+                            <a href="./assets/blog/blog_listing.html" class="header__nav-item-link-item">blog listing</a>
+                            <a href="./assets/blog/blog_single.html" class="header__nav-item-link-item">blog single photo</a>
+                            <a href="./assets/blog/blog_gallery.html" class="header__nav-item-link-item">blog single gallery</a>
+                            <a href="./assets/blog/blog_vimeo.html" class="header__nav-item-link-item">blog single vimeo</a>
+                            <a href="./assets/blog/blog_vimeo.html" class="header__nav-item-link-item">blog single youtobe</a>
+                        </div>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="./assets/contact/contact.html" class="header__nav-item-link">contact</a>
+                    </div>
+                </div>
+                <div class="header__nav-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="header__content">
+                <h5>WELCOME TO THE GRANDIUM</h5>
+                <h1>Experience the Freedom</h1>
+                <h2>in London</h2>
+            </div>
+            <div class="header__booking">
+                <span class="header__booking-text">BOOK NOW YOUR HOTEL</span>
+                <div class="header__booking-items">
+                    <div class="header__booking-item">
+                        <input type="text" placeholder="CHECK IN" name="checkin" class="header__booking-item-input">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <!-- Lich -->
+                        <div class="calendar__check-in">
+                            <div class="calendar"></div>
+                        </div>
+                    </div>
+                    <div class="header__booking-item">
+                        <input type="text" placeholder="CHECK OUT" name="checkout" class="header__booking-item-input">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <!-- Lich -->
+                        <div class="calendar__check-out">
+                            <div class="calendar2"></div>
+                        </div>
+                    </div>
+                    <div class="header__booking-item">
+                        <select name="" id="header__booking-item" class="header__booking-item">
+                            <option value="0">ADULTS</option>
+                            <option value="1">1 ADULTS</option>
+                            <option value="2">2 ADULTS</option>
+                            <option value="3">3 ADULTS</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="header__booking-item">
+                        <select name="" id="header__booking-item" class="header__booking-item">
+                            <option value="0">CHILDRENS</option>
+                            <option value="1">1 CHILDRENS</option>
+                            <option value="2">2 CHILDRENS</option>
+                            <option value="3">3 CHILDRENS</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <span class="header__booking-item-book-now">book now</span>
+                </div>
+            </div>
+            <div class="header__navigation-btn">
+                <i class="fa-solid fa-angle-left header__navigation-btn-left"></i>
+                <i class="fa-solid fa-angle-right header__navigation-btn-right"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container_book-rooms">
+                <div class="container_book-room">
+                    <div class="grid wide">
+                        <div class="grid__row multiple-items">
+                            <div class="grid__column-3 padding-30 m-6 c-12 padding-0 margin-30">
+                                <div class="container_book-room-items">
+                                    <a href="" class="container_book-room-items-link">
+                                        <div class="container_book-room-items-img" style="background-image: url(./assets/img/photo-room-1.jpg);"></div>
+                                    </a>
+                                    <div class="container_book-room-item">
+                                        <a href="" class="container_book-room-item-name">Single room</a>
+                                        <span class="container_book-room-item-price">$ 160.00</span>
+                                        <span class="container_book-room-item-description">Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</span>
+                                        <div class="container_book-room-item-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3 padding-30 m-6 c-12 padding-0 margin-30">
+                                <div class="container_book-room-items">
+                                    <a href="" class="container_book-room-items-link">
+                                        <div class="container_book-room-items-img" style="background-image: url(./assets/img/photo-room-2.jpg);"></div>
+                                    </a>
+                                    <div class="container_book-room-item">
+                                        <a href="" class="container_book-room-item-name">Double room</a>
+                                        <span class="container_book-room-item-price">$ 300.00</span>
+                                        <span class="container_book-room-item-description">Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</span>
+                                        <div class="container_book-room-item-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3 padding-30 m-6 c-12 padding-0 margin-30">
+                                <div class="container_book-room-items">
+                                    <a href="" class="container_book-room-items-link">
+                                        <div class="container_book-room-items-img" style="background-image: url(./assets/img/photo-room-3.jpg);"></div>
+                                    </a>
+                                    <div class="container_book-room-item">
+                                        <a href="" class="container_book-room-item-name">Deluxe Single room</a>
+                                        <span class="container_book-room-item-price">$ 420.00</span>
+                                        <span class="container_book-room-item-description">Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</span>
+                                        <div class="container_book-room-item-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3 padding-30 padding-0 m-6 c-12 margin-30">
+                                <div class="container_book-room-items">
+                                    <a href="" class="container_book-room-items-link">
+                                        <div class="container_book-room-items-img" style="background-image: url(./assets/img/photo-room-3.jpg);"></div>
+                                    </a>
+                                    <div class="container_book-room-item">
+                                        <a href="" class="container_book-room-item-name">Deluxe Double Room</a>
+                                        <span class="container_book-room-item-price">$ 540.00</span>
+                                        <span class="container_book-room-item-description">Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</span>
+                                        <div class="container_book-room-item-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3 padding-30 padding-0 m-6 c-12 margin-30">
+                                <div class="container_book-room-items">
+                                    <a href="" class="container_book-room-items-link">
+                                        <div class="container_book-room-items-img" style="background-image: url(./assets/img/photo-room-3.jpg);"></div>
+                                    </a>
+                                    <div class="container_book-room-item">
+                                        <a href="" class="container_book-room-item-name">Royal Suit Room</a>
+                                        <span class="container_book-room-item-price">$ 680.00</span>
+                                        <span class="container_book-room-item-description">Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</span>
+                                        <div class="container_book-room-item-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" style="background-image: url(./assets/img/photo-about.jpg);">
+                <div class="section-warp">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__column-2 padding-0 m-12 c-12">
+                                <div class="section-heading">
+                                    <h5>ABOUT THE GRANDIUM</h5>
+                                    <h2>Your Perfect Escape</h2>
+                                </div>
+                                <div class="section-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                                    <p>Nulla vel nisi felis. Vivamus vitae ex a magna cursus pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nec ante euismod, posuere turpis facilisis, fringilla odio. Nunc eget purus at dolor venenatis cursus et non arcu. Praesent rutrum condimentum risus, sed interdum purus euismod eget.</p>
+                                </div>
+                                <a href="" class="section-btn">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__facilities">
+                <div class="container__facilities-heading">
+                    <h5>OUR FACILITIES</h5>
+                    <h2>Explore The Grandium</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                </div>
+                <div class="grid wide">
+                    <div class="grid__row">
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-blog-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Sky Bar & Lounge</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-services-2-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Private Dining</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-services-3-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Conference & Events</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-services-4-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Wedding Venue</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-services-5-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Spa & Beauty Center</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-3 m-6 col c-12">
+                            <div class="container__facilities-warp" style="background-image: url(./assets/img/photo-services-6-1.jpg);">
+                                <a href="" class="ontainer__facilities-link">
+                                    <h3>Swimming Pool</h3>
+                                    <p class="c-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__gallery">
+                <div class="container__gallery-heading">
+                    <h5>GALLERY</h5>
+                    <h2>Discover The Grandium</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                </div>
+                <div class="container__gallery-items">
+                    <div class="container__gallery-item c-0">
+                        <div class="container__gallery-item-solution-left"></div>
+                        <div class="container__gallery-item-img js-gallery-img-back" style="background-image:url(./assets/img/photo-services-1-2.jpg);">
+                            <div class="container__gallery-item-name">Sky Bar & Lounge</div>
+                        </div>
+                    </div>
+                    <div class="container__gallery-item active c-12">
+                        <div class="container__gallery-item-img js-gallery-img" style="background-image:url(./assets/img/photo-services-2-1.jpg);">
+                            <div class="container__gallery-item-name js-gallery-name">Sky Bar & Lounge</div>
+                            <div class="container__gallery-item-back">
+                                <i class="fa-solid fa-left-long"></i>
+                            </div>
+                            <div class="container__gallery-item-next">
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__gallery-item c-0">
+                        <div class="container__gallery-item-solution-right"></div>
+                        <div class="container__gallery-item-img js-gallery-img-next" style="background-image:url(./assets/img/photo-services-3-1.jpg);">
+                            <div class="container__gallery-item-name">Sky Bar & Lounge</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__video-tour">
+                <img src="./assets/img/thumb-video-full.jpg" alt="" class="container__video-tour-img">
+                <div class="container__video-tour-heading">
+                    <h5>OVERVIEW</h5>
+                    <h2>Video Tour</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                </div>
+                <div class="container__video-tour-play">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="container__video-tour-video">
+                    <video src="./assets/video/video1.mp4" width="70%" height="auto" controls></video>
+                </div>
+            </div>
+            <div class="container__offers">
+                <div class="container__offers-img" style="background-image: url(./assets/img/photo-offers.jpg);">
+                    <div class="container__offers-heading">
+                        <h5>OFFERS</h5>
+                        <h2>The Grandium Special Offers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    </div>
+                    <div class="container__offers-items">
+                        <div class="container__offers-item m-0 c-0"></div>
+                        <div class="container__offers-item opposite-tl m-12 c-12 m-flex c-flex">
+                            <div class="container__offers-item-description m-7 c-12">
+                                <h3 class="container__offers-item-description-heading">Stay 3 Nights - Save 20%</h3>
+                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
+                                <a href="" class="container__offers-item-description-btn">read more</a>
+                            </div>
+                            <div class="container__offers-item-img m-5 c-12" style="background-image: url(./assets/img/photo-offers-1.jpg);">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="container__offers-item opposite m-12 c-12 m-flex c-flex">
+                            <div class="container__offers-item-description m-7 c-12">
+                                <h3 class="container__offers-item-description-heading">Weddings Special Offer 2016</h3>
+                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
+                                <a href="" class="container__offers-item-description-btn">read more</a>
+                            </div>
+                            <div class="container__offers-item-img m-5 c-12" style="background-image: url(./assets/img/photo-offers-2.jpg);">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="container__offers-item opposite m-12 c-12 m-flex c-flex">
+                            <div class="container__offers-item-description m-7 c-12">
+                                <h3 class="container__offers-item-description-heading">Spa Treatment Launch Offer</h3>
+                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
+                                <a href="" class="container__offers-item-description-btn">read more</a>
+                            </div>
+                            <div class="container__offers-item-img m-5 c-12" style="background-image: url(./assets/img/photo-offers-3.jpg);">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="container__offers-item margin-bottom opposite-tl m-12 c-12 m-flex c-flex">
+                            <div class="container__offers-item-description m-7 c-12">
+                                <h3 class="container__offers-item-description-heading">Free Glass of Wine with Daily Classics Menu</h3>
+                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
+                                <a href="" class="container__offers-item-description-btn">read more</a>
+                            </div>
+                            <div class="container__offers-item-img m-5 c-12" style="background-image: url(./assets/img/photo-offers-4.jpg);">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__blog">
+                <div class="container__blog-heading">
+                    <h5>blog</h5>
+                    <h2>Latest News</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                </div>
+                <div class="container__blog-warp four-items">
+                    <div class="container__blog-items animation-blog-2 m-6 c-12">
+                        <a href="" class="container__blog-item-img" style="background-image:url(./assets/img/photo-blog-1.jpg);"></a>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">Best Things to Do In London Enjoy the Nightlife</a>
+                            </h3>
+                            <h5>TRAVEL</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>24</b>
+                                <span>dec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__blog-items animation-blog-2 m-6 c-12">
+                        <a href="" class="container__blog-item-img" style="background-image:url(./assets/img/photo-blog-2.jpg);"></a>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">A Walk from The Grandium Hotel Around</a>
+                            </h3>
+                            <h5>TRAVEL</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>21</b>
+                                <span>nov</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__blog-items m-6 c-12">
+                        <a href="" class="container__blog-item-img" style="background-image:url(./assets/img/photo-blog-3.jpg);"></a>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">Top Events in London This February</a>
+                            </h3>
+                            <h5>EVENTS</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>19</b>
+                                <span>oct</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__blog-items m-6 c-12">
+                        <div class="container__blog-item-warp">
+                            <a href="#" class="container__blog-item-img" style="background-image:url(./assets/img/photo-blog-4.jpg);">
+                                <div class="container__blog-item-warp-btn">
+                                    <i class="fa-solid fa-circle active"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">Enjoy Wimbledon Finals Week The Grandium Hotel</a>
+                            </h3>
+                            <h5>EVENTS</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>17</b>
+                                <span>sep</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__blog-items animation-blog m-6 c-12">
+                        <div class="container__blog-item-video">
+                            <video src="./assets/video/video1.mp4" class="container__blog-item-video-play" controls></video>
+                        </div>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">The Ultimate Father's Day Gift: The Grandium Hotel</a>
+                            </h3>
+                            <h5>ACCOMONDATION</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>14</b>
+                                <span>aug</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__blog-items animation-blog m-6 c-12">
+                        <div class="container__blog-item-video">
+                            <video src="./assets/video/video1.mp4" class="container__blog-item-video-play" controls></video>
+                        </div>
+                        <div class="container__blog-item-text">
+                            <h3 class="container__blog-item-text-heading">
+                                <a href="">Father's Day Dining & Afternoon Tea Specials</a>
+                            </h3>
+                            <h5>ACCOMONDATION</h5>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <a href="" class="container__blog-item-text-btn">Read more</a>
+                            <div class="container__blog-item-text-time">
+                                <b>12</b>
+                                <span>may</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__blog-icon">
+                    <i class="fa-solid fa-circle container__blog-icon-btn"></i>
+                    <i class="fa-solid fa-circle container__blog-icon-btn"></i>
+                </div>
+            </div>
+            <div class="container__comment">
+                <div class="container__comment-heading">
+                    <h5>TESTIMONIALS</h5>
+                    <h2>Happy Clients</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                </div>
+                <div class="container__comment-warp grid wide d-flex multiple-items">
+                    <div class="container__comment-warp-item m-6 c-12">
+                        <p class="container__comment-warp-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.</p>
+                        <div class="container__comment-warp-item-user">
+                            <img src="./assets/img/user-1.jpg" alt="" class="container__comment-warp-item-avt">
+                            <div class="container__comment-warp-item-info">
+                                <p class="container__comment-warp-item-name">MARILYN SUTTLE</p>
+                                <p class="container__comment-warp-item-address">UK, BRIGHTON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__comment-warp-item m-6 c-0">
+                        <p class="container__comment-warp-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.</p>
+                        <div class="container__comment-warp-item-user">
+                            <img src="./assets/img/user-2.jpg" alt="" class="container__comment-warp-item-avt">
+                            <div class="container__comment-warp-item-info">
+                                <p class="container__comment-warp-item-name">MARILYN SUTTLE</p>
+                                <p class="container__comment-warp-item-address">UK, BRIGHTON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__comment-warp-item m-0 c-0">
+                        <p class="container__comment-warp-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.</p>
+                        <div class="container__comment-warp-item-user">
+                            <img src="./assets/img/user-3.jpg" alt="" class="container__comment-warp-item-avt">
+                            <div class="container__comment-warp-item-info">
+                                <p class="container__comment-warp-item-name">MARILYN SUTTLE</p>
+                                <p class="container__comment-warp-item-address">UK, BRIGHTON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__comment-warp-item m-0 c-0">
+                        <p class="container__comment-warp-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.</p>
+                        <div class="container__comment-warp-item-user">
+                            <img src="./assets/img/user-4.jpg" alt="" class="container__comment-warp-item-avt">
+                            <div class="container__comment-warp-item-info">
+                                <p class="container__comment-warp-item-name">JOHN FEDERICO</p>
+                                <p class="container__comment-warp-item-address">ITALY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="grid">
+                    <div class="d-flex m-flex-cl m-12 c-12 c-flex-cl">
+                        <div class="footer-top__social m-12 c-12">
+                            <h5>SOCIAL MEDIA</h5>
+                            <p>FOLLOW THE GRADIUM</p>
+                            <div class="footer-top__social-icon">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-top__contact m-12 c-12">
+                            <h5>NEWSLETTER</h5>
+                            <p>WE LOVE TO SHARE NEW OFFERS AND EXLUSIVE PROMOTIONS</p>
+                            <div class="footer-top__contact-input">
+                                <input type="text" name="" id="" placeholder="ENTER YOUR E-MAIL ADDRESS">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="./assets/img/logo.png" alt="" class="footer-bottom__img">
+                <p>COPYRIGHT © THE GRANDIUM HOTEL</p>
+                <ul class="footer-bottom__contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>LONGRIDGE ROAD, EARLS COURT, LONDON</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+1-800-123-45-67</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <p>INFO@THEGRANDIUMHOTEL.COM</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-bottom__nav">
+                    <li>
+                        <a href="">SITEMAP</a>
+                    </li>
+                    <li>
+                        <a href="">PRIVACY POLICY</a>
+                    </li>
+                    <li>
+                        <a href="">TERMS OF USE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#header" class="site-backtop">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <script src="./assets/jquery_321/jquery-3.2.1.js"></script>
+        <script src="./assets/jquery_321/jquery-3.2.1.min.js"></script>
+        <script src="./assets/slick/slick-1.8.1/slick/slick.js"></script>
+        <script src="./assets/slick/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </div>
+</body>
+</html>

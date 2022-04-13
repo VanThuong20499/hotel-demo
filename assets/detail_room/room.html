@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="./css/base_room.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="room">
+        <div id="header" class="header">
+            <div class="header__heading c-0">
+                <div class="header__heading-items">
+                    <span class="header__heading-item-phone">+1-800-123-45-67</span>
+                    <div class="header__heading-item-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="header__heading-items">
+                    <span class="header__heading-item-language color-white">EN</span>
+                    <span class="header__heading-item-language">FR</span>
+                    <span class="header__heading-item-language">DE</span>
+                </div>
+            </div>
+            <div class="header__nav">
+                <div class="header__nav-items">
+                    <div class="header__nav-item">
+                        <a href="../../index.html" class="header__nav-item-link">HOME</a>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="../detail_page/about.html" class="header__nav-item-link">About us</a>
+                    </div>
+                    <div class="header__nav-item active-nav">
+                        <a href="../detail_room/room.html" class="header__nav-item-link">Rooms</a>
+                        <div class="header__nav-item-link-items">
+                            <a href="../detail_room/room.html" class="header__nav-item-link-item">room listing</a>
+                            <a href="../detail_room/room_detail.html" class="header__nav-item-link-item">room detail</a>
+                        </div>
+                    </div>
+                    <a href="../services/services_detail.html" class="header__nav-item-link">services</a>
+                </div>
+                <a href="../../index.html" class="header__nav-item-logo-link">
+                    <img src="../img/logo.png" alt="" class="header__nav-item-logo">
+                </a>
+                <div class="header__nav-items">
+                    <div class="header__nav-item">
+                        <a href="../gallery/gallery.html" class="header__nav-item-link">gallery</a>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="../booking/booking.html" class="header__nav-item-link">booking</a>
+                    </div>
+                    <div class="header__nav-item active-nav">
+                        <a href="../blog/blog_listing.html" class="header__nav-item-link">blog</a>
+                        <div class="header__nav-item-link-items min-width-200">
+                            <a href="../blog/blog_listing.html" class="header__nav-item-link-item">blog listing</a>
+                            <a href="../blog/blog_single.html" class="header__nav-item-link-item">blog single photo</a>
+                            <a href="../blog/blog_gallery.html" class="header__nav-item-link-item">blog single gallery</a>
+                            <a href="../blog/blog_vimeo.html" class="header__nav-item-link-item">blog single vimeo</a>
+                            <a href="../blog/blog_vimeo.html" class="header__nav-item-link-item">blog single youtobe</a>
+                        </div>
+                    </div>
+                    <div class="header__nav-item">
+                        <a href="../contact/contact.html" class="header__nav-item-link">contact</a>
+                    </div>
+                </div>
+                <div class="header__nav-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="container_about-page" style="background-image: url(../img/photo-slide-3.jpg);">
+                <div class="grid wide margin-left padding-40">
+                    <div class="row">
+                        <div class="container_about-page-warp l-7 col m-6">
+                            <h5>EXPERIENCE THE FREEDOM</h5>
+                            <h1>Rooms Page</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                            <div class="container_about-page-items">
+                                <i class="fa-solid fa-house-chimney"></i>
+                                <a href="">Home</a>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <a href="">Pages</a>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <a href="" class="active-main-color">Rooms Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__rooms">
+                <div class="grid wide padding-40">
+                    <div class="row container__rooms-items">
+                        <div class="l-3 m-3 c-12">
+                            <a href="">
+                                <div class="container__rooms-img" style="background-image: url(../img/photo-room-1.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="l-7 m-7 c-12">
+                            <div class="container__rooms-item-center">
+                                <h2><a href="">Single Room</a></h2>
+                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                                <div class="container__rooms-item-center-warp">
+                                    <div class="grid">
+                                        <div class="row margin-0">
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>BREAKFAST</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>WI-FI</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>HAIR DRYER</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>LCD TV</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SHOWER AND TAB</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SECURITY SYSTEM</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>AIR CONDITIONING</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>MINI BAR</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>TEA AND COFFEE SET</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-2 m-2 c-12">
+                            <div class="container__rooms-item-right">
+                                <div class="container__rooms-item-right-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="container__rooms-item-right-new-price">$ 160.00</p>
+                                <p class="container__rooms-item-right-old-price">$ 180.00</p>
+                                <h5>PER NIGHT</h5>
+                                <a href="" class="container__rooms-item-right-btn">ROOM DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row container__rooms-items">
+                        <div class="l-3 m-3 c-12">
+                            <a href="">
+                                <div class="container__rooms-img" style="background-image: url(../img/photo-room-2.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="l-7 m-7 c-12">
+                            <div class="container__rooms-item-center">
+                                <h2><a href="">Double Room</a></h2>
+                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                                <div class="container__rooms-item-center-warp">
+                                    <div class="grid">
+                                        <div class="row margin-0">
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>BREAKFAST</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>WI-FI</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>HAIR DRYER</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>LCD TV</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SHOWER AND TAB</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SECURITY SYSTEM</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>AIR CONDITIONING</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>MINI BAR</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>TEA AND COFFEE SET</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-2 m-2 c-12">
+                            <div class="container__rooms-item-right">
+                                <div class="container__rooms-item-right-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="container__rooms-item-right-new-price">$ 300.00</p>
+                                <p class="container__rooms-item-right-old-price">$ 340.00</p>
+                                <h5>PER NIGHT</h5>
+                                <a href="" class="container__rooms-item-right-btn">ROOM DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row container__rooms-items">
+                        <div class="l-3 m-3 c-12">
+                            <a href="">
+                                <div class="container__rooms-img" style="background-image: url(../img/photo-room-3.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="l-7 m-7 c-12">
+                            <div class="container__rooms-item-center">
+                                <h2><a href="">Deluxe Single Room</a></h2>
+                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                                <div class="container__rooms-item-center-warp">
+                                    <div class="grid">
+                                        <div class="row margin-0">
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>BREAKFAST</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>WI-FI</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>HAIR DRYER</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>LCD TV</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SHOWER AND TAB</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SECURITY SYSTEM</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>AIR CONDITIONING</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>MINI BAR</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>TEA AND COFFEE SET</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-2 m-2 c-12">
+                            <div class="container__rooms-item-right">
+                                <div class="container__rooms-item-right-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="container__rooms-item-right-new-price">$ 420.00</p>
+                                <p class="container__rooms-item-right-old-price">$ 480.00</p>
+                                <h5>PER NIGHT</h5>
+                                <a href="" class="container__rooms-item-right-btn">ROOM DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row container__rooms-items">
+                        <div class="l-3 m-3 c-12">
+                            <a href="">
+                                <div class="container__rooms-img" style="background-image: url(../img/photo-room-4.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="l-7 m-7 c-12">
+                            <div class="container__rooms-item-center">
+                                <h2><a href="">Deluxe Double Room</a></h2>
+                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                                <div class="container__rooms-item-center-warp">
+                                    <div class="grid">
+                                        <div class="row margin-0">
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>BREAKFAST</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>WI-FI</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>HAIR DRYER</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>LCD TV</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SHOWER AND TAB</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SECURITY SYSTEM</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>AIR CONDITIONING</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>MINI BAR</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>TEA AND COFFEE SET</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-2 m-2 c-12">
+                            <div class="container__rooms-item-right">
+                                <div class="container__rooms-item-right-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="container__rooms-item-right-new-price">$ 540.00</p>
+                                <p class="container__rooms-item-right-old-price">$ 620.00</p>
+                                <h5>PER NIGHT</h5>
+                                <a href="" class="container__rooms-item-right-btn">ROOM DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row container__rooms-items">
+                        <div class="l-3 m-3 c-12">
+                            <a href="">
+                                <div class="container__rooms-img" style="background-image: url(../img/photo-room-5.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="l-7 m-7 c-12">
+                            <div class="container__rooms-item-center">
+                                <h2><a href="">Royal Suit Room</a></h2>
+                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                                <div class="container__rooms-item-center-warp">
+                                    <div class="grid">
+                                        <div class="row margin-0">
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>BREAKFAST</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>WI-FI</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>HAIR DRYER</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>LCD TV</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SHOWER AND TAB</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 border-bottom">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>SECURITY SYSTEM</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>AIR CONDITIONING</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border border-left-right">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>MINI BAR</p>
+                                            </div>
+                                            <div class="l-4 c-12 m-4 c-border">
+                                                <i class="fa-solid fa-check"></i>
+                                                <p>TEA AND COFFEE SET</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-2 m-2 c-12">
+                            <div class="container__rooms-item-right">
+                                <div class="container__rooms-item-right-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="container__rooms-item-right-new-price">$ 680.00</p>
+                                <p class="container__rooms-item-right-old-price">$ 760.00</p>
+                                <h5>PER NIGHT</h5>
+                                <a href="" class="container__rooms-item-right-btn">ROOM DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__rooms-pages">
+                        <ul>
+                            <li>
+                                <a href="">1</a>
+                            </li>
+                            <li class="active-pages">
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <a href="">4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-top">
+                <div class="grid wide">
+                    <div class="d-flex m-flex-cl m-12 c-12 c-flex-cl row">
+                        <div class="footer-top__social m-12 c-12 l-6">
+                            <h5>SOCIAL MEDIA</h5>
+                            <p>FOLLOW THE GRADIUM</p>
+                            <div class="footer-top__social-icon">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-top__contact m-12 c-12 l-6">
+                            <h5>NEWSLETTER</h5>
+                            <p>WE LOVE TO SHARE NEW OFFERS AND EXLUSIVE PROMOTIONS</p>
+                            <div class="footer-top__contact-input">
+                                <input type="text" name="" id="" placeholder="ENTER YOUR E-MAIL ADDRESS">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="../img/logo.png" alt="" class="footer-bottom__img">
+                <p>COPYRIGHT © THE GRANDIUM HOTEL</p>
+                <ul class="footer-bottom__contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>LONGRIDGE ROAD, EARLS COURT, LONDON</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+1-800-123-45-67</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <p>INFO@THEGRANDIUMHOTEL.COM</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-bottom__nav">
+                    <li>
+                        <a href="">SITEMAP</a>
+                    </li>
+                    <li>
+                        <a href="">PRIVACY POLICY</a>
+                    </li>
+                    <li>
+                        <a href="">TERMS OF USE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<script src="./js/main.js"></script>
+</body>
+</html>
