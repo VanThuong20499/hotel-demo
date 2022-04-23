@@ -663,6 +663,10 @@ html{
         left: 0;
     }
 
+    .container__services-item-img a{
+        display: none;
+    }
+
     /* footer */
     .footer-top__contact,
     .footer-top__social{
