@@ -19,152 +19,21 @@ headerNavBtn.addEventListener('click', function(){
 
 // click chuyển ảnh
 
-function transferPhotos(){
-    const prevBtn = document.querySelector('.btn-prev');
-    const nextBtn = document.querySelector('.btn-next');
-    const roomImg = document.querySelector('.container__room-detail-warp-img');
-    const roomImgExtras = document.querySelectorAll('.container__room-detail-warp-img-extra');
-    const myImgs = [
-        {
-            path: '../img/photo-room-1.jpg'
-        },
-        {
-            path: '../img/photo-room-2.jpg'
-        },
-        {
-            path: '../img/photo-room-3.jpg'
-        },
-        {
-            path: '../img/photo-room-4.jpg'
-        },
-        {
-            path: '../img/photo-room-5.jpg'
-        }
-    ]
-    var count = 0;
-    var dem = 0;
-    roomImg.style.backgroundImage = `url(${myImgs[0].path})`;
-    nextBtn.addEventListener('click', function(){
-        ++count;
-        if(count >= myImgs.length){
-            count = 0;
-        }
-        roomImg.style.backgroundImage = `url(${myImgs[count].path})`;
-        roomImgExtras[0].style.backgroundImage = `url(${myImgs[count >= myImgs.length ? count = 0 : count].path})`;
-        roomImgExtras[1].style.backgroundImage = `url(${myImgs[count + 1 >= myImgs.length ? 1 : count+1].path})`;
-        roomImgExtras[2].style.backgroundImage = `url(${myImgs[count + 2 >= myImgs.length ? 2 : count+2].path})`;
-        roomImg.animate([
-            {
-              transform: 'translateX(100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-
-        roomImgExtras[0].animate([
-            {
-              transform: 'translateX(100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-          roomImgExtras[1].animate([
-            {
-              transform: 'translateX(100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-          roomImgExtras[2].animate([
-            {
-              transform: 'translateX(100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-    })
-
-    prevBtn.addEventListener('click', function(){
-        --count;
-        if(count < 0){
-            count = myImgs.length-1;
-        }
-        roomImg.style.backgroundImage = `url(${myImgs[count].path})`;
-        roomImgExtras[0].style.backgroundImage = `url(${myImgs[count < 0 ? count = 0 : count].path})`;
-        roomImgExtras[1].style.backgroundImage = `url(${myImgs[count - 1 < 0 ? 1 : count-1].path})`;
-        roomImgExtras[2].style.backgroundImage = `url(${myImgs[count - 2 < 0 ? 2 : count-2].path})`;
-        roomImg.animate([
-            {
-              transform: 'translateX(-100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-          roomImgExtras[0].animate([
-            {
-              transform: 'translateX(-100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-          roomImgExtras[1].animate([
-            {
-              transform: 'translateX(-100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-          roomImgExtras[2].animate([
-            {
-              transform: 'translateX(-100%)',
-            },
-            {
-              transform: 'translateX(0%)',
-            }
-          ],{
-            duration: 200,
-            direction: "normal",
-            easing: "ease-in-out"
-          })
-    })
-}
-
-transferPhotos();
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
 
 // Lich
 

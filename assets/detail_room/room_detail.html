@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="./css/base_room_detail.css">
     <link rel="stylesheet" href="./css/style_room_detail.css">
@@ -110,7 +112,10 @@
                         <div class="row">
                             <div class="l-7 m-7 c-12" style="overflow-x: hidden;">
                                 <div class="container__room-detail-warp-imgs">
-                                    <div class="container__room-detail-warp-img">
+                                    <div class="slider-for">
+                                        <img src="../img/photo-room-1.jpg" alt="" class="container__room-detail-warp-img">
+                                        <img src="../img/photo-room-2.jpg" alt="" class="container__room-detail-warp-img">
+                                        <img src="../img/photo-room-3.jpg" alt="" class="container__room-detail-warp-img">
                                     </div>
                                     <div class="container__room-detail-warp-img-price">$ 160.00
                                         <p>PER NIGHT</p>
@@ -121,7 +126,16 @@
                                     </div>
                                 </div>
                                 <div class="grid">
-                                    <div class="row">
+                                    <div class="slider-nav container__room-detail-warp-imgs-extra">
+                                        <div class="l-4 col m-4 c-0">
+                                            <div class="container__room-detail-warp-img-extra" style="background-image: url(../img/photo-room-1.jpg);"></div>
+                                        </div>
+                                        <div class="l-4 col m-4 c-0">
+                                            <div class="container__room-detail-warp-img-extra" style="background-image: url(../img/photo-room-2.jpg);"></div>
+                                        </div>
+                                        <div class="l-4 col m-4 c-0">
+                                            <div class="container__room-detail-warp-img-extra" style="background-image: url(../img/photo-room-3.jpg);"></div>
+                                        </div>
                                         <div class="l-4 col m-4 c-0">
                                             <div class="container__room-detail-warp-img-extra" style="background-image: url(../img/photo-room-1.jpg);"></div>
                                         </div>
@@ -302,6 +316,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
